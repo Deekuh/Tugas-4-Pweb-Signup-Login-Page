@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    background-color: bisque;
+}
+
+.box {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 35px;
+    width: 30%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    margin-top: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 20vw;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(248, 192, 123);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(245, 172, 82);
+}
+
+.box td {
+    text-align: left;
+}
+
+.box .field {
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    width: 20vw;
+    height: 30px;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: smaller;
+}
