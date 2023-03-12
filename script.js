@@ -14,7 +14,7 @@ function create_account() {
         alert("Fields cannot be empty!");
     }
     else if(!letters.test(n)){
-        alert('Invalid name format! Must contain alphabets only');
+        alert('Invalid name format! Name must contain alphabets only');
     }
     else if(!email_val.test(e)){
         alert("Invalid email format! Please enter valid email address");
@@ -22,8 +22,11 @@ function create_account() {
     else if(p!=cp){
         alert("Password does not match!");
     }
-    else if(document.getElementById("p1").value.length < 8){
-        alert("Password must be at least 8 characters!");
+    else if(document.getElementById("p1").value.length < 6){
+        alert("Password must be at least 6 characters!");
+    }
+    else if(document.getElementById("p1").value.length > 12){
+        alert("Password cannot be more than 12 characters!");
     }
     else{
         alert("Your account has been created successfully!\nRedirecting to login page . . .");
